@@ -146,6 +146,7 @@ class StochasticTrainer(object):
             shuffle(idx)
 
             # process mini-batches
+            print(idx, batch_idx)
             for batch in np.split(idx, batch_idx):
                 # select indices for current batch
                 bxys = [xys[z] for z in batch]
